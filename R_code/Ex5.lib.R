@@ -1,4 +1,4 @@
-
+# Functions for Exercise 5
 
 returns <- function(column){
   vec <- column
@@ -7,7 +7,7 @@ returns <- function(column){
   return(out)
 }
 
-OptimalPortfolio <- function(names,data.train,lambda=1){
+OptimalPortfolio <- function(names,data.train,lambda=1,min.inv=0){
   # Reduce the data set accordingly
   data.red <- data.train[,names,with=F]
   
@@ -27,7 +27,7 @@ OptimalPortfolio <- function(names,data.train,lambda=1){
   constr <- cbind2(constr,diag(size))
   
   # Find optimal portfolio allocation, solving quadratic program
-  sol <- solve.QP( Dmat=2*lambda*Sigma, dvec=mu, Amat=constr, bvec=c(1,-1,rep(0,size)) )
+  sol <- solve.QP( Dmat=2*lambda*Sigma, dvec=mu, Amat=constr, bvec=c(1,-1,rep(min.inv,size)) )
   vec.sol <- sol$solution
   dt.sol <- round(data.table(t(vec.sol)),3)
   setnames(dt.sol,names)

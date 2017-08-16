@@ -1,4 +1,4 @@
-
+# Functions for Exercise 2
 
 # function to create the stock price tree
 StockTree <- function(S, sigma, delta, N) {

@@ -11,6 +11,7 @@ options(digits=2)
 # Load necessary packages
 param.dir <- 'C:/Users/Bernardo/Desktop/Yewno_tasks/R_code/'
 source(paste0(param.dir,'load.libs.R'))
+#########################################################################
 
 # Read the data
 data <- fread(paste0(param.dir,"profitability.csv"))

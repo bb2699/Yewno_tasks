@@ -8,9 +8,11 @@
 
 
 rm(list=ls())
+param.dir <- 'C:/Users/Bernardo/Desktop/Yewno_tasks/R_code/'
+#########################################################################
 
 # Load necessary packages
-source('C:/Users/Bernardo/Desktop/Yewno_tasks/R_code/load.libs.R')
+source(paste0(param.dir,'load.libs.R'))
 
 
 # Pull data from Yahoo finance and calculate returns

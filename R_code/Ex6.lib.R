@@ -1,4 +1,4 @@
-
+# Functions fro Exercise 6
 
 
 diffs <- function(column){

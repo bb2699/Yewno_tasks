@@ -10,6 +10,7 @@ options(digits=5)
 
 # Load necessary packages
 param.dir <- 'C:/Users/Bernardo/Desktop/Yewno_tasks/R_code/'
+#########################################################################
 source(paste0(param.dir,'load.libs.R'))
 source(paste0(param.dir,'Ex6.lib.R'))
 

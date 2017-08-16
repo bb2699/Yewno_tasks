@@ -6,10 +6,12 @@
 #########################################################################
 
 rm(list=ls())
+param.dir <- 'C:/Users/Bernardo/Desktop/Yewno_tasks/R_code/'
+#########################################################################
 
 # Load necessary packages
-source('C:/Users/Bernardo/Desktop/Yewno_tasks/R_code/load.libs.R')
-source('C:/Users/Bernardo/Desktop/Yewno_tasks/R_code/Ex2.lib.R')
+source(paste0(param.dir,'load.libs.R'))
+source(paste0(param.dir,'Ex2.lib.R'))
 
 # Parameters
 S <- 10
